@@ -3,225 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Animal，為毛孩挑選安心、天然、好好生活的寵物用品。"
-    />
-    <title>Animal — 和毛孩一起，好好生活</title>
+    <meta name="description" content="Animal，以自然、安心、好好生活的理念為毛孩挑選日常好物。" />
+    <title>Animal — Good company for good days</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="announcement">
-      <span>新朋友限定</span> 首次購物滿 $799，輸入 <strong>HIANIMAL</strong> 折 $100
-      <a href="#products" aria-label="前往熱門商品">立即逛逛 <span aria-hidden="true">→</span></a>
-    </div>
-
     <header class="site-header">
       <a class="brand" href="#" aria-label="Animal 首頁">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 42 42" fill="none">
-            <path d="M21 36c-1.6 0-3-.8-4.3-2.1l-9-9.2a8.6 8.6 0 0 1 12.2-12.1l1.1 1.1 1.1-1.1a8.6 8.6 0 1 1 12.2 12.1l-9 9.2C24 35.2 22.6 36 21 36Z" fill="currentColor" />
-            <circle cx="13.8" cy="8.6" r="3.1" fill="currentColor" />
-            <circle cx="21" cy="5.8" r="3.1" fill="currentColor" />
-            <circle cx="28.2" cy="8.6" r="3.1" fill="currentColor" />
-          </svg>
-        </span>
-        <span class="brand-name">animal<span>.</span></span>
+        <svg class="brand-symbol" viewBox="0 0 42 42" aria-hidden="true">
+          <path d="M21 37C13 31 5 25 5 16a8 8 0 0 1 16-2 8 8 0 0 1 16 2c0 9-8 15-16 21Z" />
+          <circle cx="12" cy="10" r="4" /><circle cx="21" cy="6" r="4" /><circle cx="30" cy="10" r="4" />
+        </svg>
+        <span>animal</span>
       </a>
-
       <nav class="main-nav" id="main-nav" aria-label="主要導覽">
-        <a href="#categories">探索分類</a>
-        <a href="#products">人氣選物</a>
-        <a href="#about">關於 Animal</a>
+        <a href="#shop">選物</a><a href="#categories">分類</a><a href="#story">我們的理念</a>
       </nav>
-
       <div class="header-actions">
-        <a class="icon-link account-link" href="#about" aria-label="會員專區">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5" /><path d="M5 20a7 7 0 0 1 14 0" /></svg>
-        </a>
-        <button class="cart-button" type="button" aria-label="購物車，共 0 件商品">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.1a2 2 0 0 0 2 1.6h8.4a2 2 0 0 0 1.9-1.4L21 9H6" /><circle cx="10" cy="20" r="1" /><circle cx="18" cy="20" r="1" /></svg>
-          <span>購物車</span>
-          <span class="cart-count" aria-live="polite">0</span>
-        </button>
-        <button class="menu-toggle" type="button" aria-label="開啟選單" aria-expanded="false" aria-controls="main-nav">
-          <span></span><span></span>
-        </button>
+        <button class="cart-button" type="button" aria-label="購物車，共 0 件商品"><span>Cart</span><b class="cart-count">0</b></button>
+        <button class="menu-toggle" type="button" aria-label="開啟選單" aria-expanded="false" aria-controls="main-nav"><i></i><i></i></button>
       </div>
     </header>
-
     <main>
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="eyebrow-dot"></span> 給最好的朋友，最好的日常</p>
-          <h1 id="hero-title">和毛孩一起，<br />好好<span class="highlight">生活。</span></h1>
-          <p class="hero-description">
-            從一口安心好食，到每天散步的小幸福。<br />
-            為你和牠，挑選真正喜歡的生活用品。
-          </p>
+          <p class="kicker"><span>Edition 01</span> Everyday companions</p>
+          <h1 id="hero-title">Good days,<br />made for <em>two.</em></h1>
+          <p class="hero-lead">為毛孩與牠們最愛的人，挑選天然、耐用、又好看的生活日常。</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#products">探索人氣選物 <span aria-hidden="true">↗</span></a>
-            <a class="text-link" href="#about">認識 Animal <span aria-hidden="true">→</span></a>
-          </div>
-          <div class="hero-note">
-            <div class="avatar-stack" aria-hidden="true">
-              <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=80&q=80" alt="" />
-              <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=80&q=80" alt="" />
-              <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=80&q=80" alt="" />
-            </div>
-            <p><strong>10,000+</strong> 個毛孩家庭的日常選擇</p>
+            <a class="button button-dark" href="#shop">探索人氣選物 <span>↗</span></a>
+            <a class="text-link" href="#story">認識 Animal <span>→</span></a>
           </div>
         </div>
-        <div class="hero-visual">
-          <div class="hero-image-wrap">
-            <img
-              class="hero-image"
-              src="https://images.unsplash.com/photo-1541599540903-216a46ca1dc0?auto=format&fit=crop&w=1200&q=88"
-              alt="在陽光下自在休息的可愛狗狗"
-            />
-            <div class="image-sticker"><span aria-hidden="true">✳</span><br />讓愛<br />每天發生</div>
+        <div class="hero-art">
+          <div class="hero-photo">
+            <img src="https://images.unsplash.com/photo-1541599540903-216a46ca1dc0?auto=format&fit=crop&w=1400&q=90" alt="在陽光下自在休息的可愛狗狗" />
+            <div class="photo-index">01 — 04</div>
           </div>
-          <div class="floating-note">
-            <span class="floating-icon" aria-hidden="true">♡</span>
-            <span><strong>自然安心</strong><small>每一份選物都經過用心挑選</small></span>
-          </div>
-          <span class="hero-sparkle sparkle-one" aria-hidden="true">✳</span>
-          <span class="hero-sparkle sparkle-two" aria-hidden="true">✳</span>
+          <div class="quality-seal"><span>Natural</span><strong>◎</strong><span>Every day</span></div>
+          <p class="vertical-note">Selected for a softer everyday</p>
         </div>
-        <div class="hero-number" aria-hidden="true">01 / 04</div>
+        <aside class="hero-aside"><p>Trusted by</p><strong>10,000+</strong><span>毛孩家庭的日常選擇</span></aside>
       </section>
-
-      <section class="promise-bar" id="about" aria-label="Animal 的承諾">
-        <div class="promise-item"><span class="promise-icon" aria-hidden="true">✿</span><span><strong>安心把關</strong><small>成分透明，品質嚴選</small></span></div>
-        <span class="promise-divider" aria-hidden="true"></span>
-        <div class="promise-item"><span class="promise-icon" aria-hidden="true">♡</span><span><strong>用心選物</strong><small>好用、耐用、毛孩喜歡</small></span></div>
-        <span class="promise-divider" aria-hidden="true"></span>
-        <div class="promise-item"><span class="promise-icon" aria-hidden="true">↗</span><span><strong>快速到家</strong><small>滿 $999 免運費</small></span></div>
-      </section>
-
-      <section class="categories section-shell" id="categories" aria-labelledby="categories-title">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">SHOP BY CATEGORY</p>
-            <h2 id="categories-title">今天想為牠找什麼？</h2>
-          </div>
-          <a class="text-link" href="#products">看全部分類 <span aria-hidden="true">→</span></a>
+      <section class="ticker" aria-label="品牌承諾"><div><span>安心把關</span><i>✦</i><span>天然材質</span><i>✦</i><span>快速到家 · 滿 $999免運</span><i>✦</i><span>安心把關</span><i>✦</i><span>天然材質</span></div></section>
+      <section class="categories" id="categories" aria-labelledby="categories-title">
+        <div class="section-head">
+          <div><p class="kicker">01 / Find their favorite</p><h2 id="categories-title">今天，牠想要什麼？</h2></div>
+          <a class="circle-link" href="#shop" aria-label="查看全部商品">↗</a>
         </div>
         <div class="category-grid">
-          <a class="category-card category-food" href="#products" data-filter-link="food">
-            <div class="category-image"><img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&w=700&q=85" alt="一碗為毛孩準備的食物" loading="lazy" /></div>
-            <div class="category-info"><span class="category-number">01</span><span><strong>好食日常</strong><small>乾糧・零食・營養補給</small></span><span class="category-arrow" aria-hidden="true">↗</span></div>
-          </a>
-          <a class="category-card category-play" href="#products" data-filter-link="play">
-            <div class="category-image"><img src="https://images.unsplash.com/photo-1535294435445-d7249524ef2e?auto=format&fit=crop&w=700&q=85" alt="狗狗開心玩著玩具" loading="lazy" /></div>
-            <div class="category-info"><span class="category-number">02</span><span><strong>玩心大發</strong><small>玩具・散步・外出用品</small></span><span class="category-arrow" aria-hidden="true">↗</span></div>
-          </a>
-          <a class="category-card category-home" href="#products" data-filter-link="home">
-            <div class="category-image"><img src="https://images.unsplash.com/photo-1545249390-6bdfa286032f?auto=format&fit=crop&w=700&q=85" alt="舒適溫暖的寵物居家空間" loading="lazy" /></div>
-            <div class="category-info"><span class="category-number">03</span><span><strong>舒服小窩</strong><small>睡床・清潔・居家生活</small></span><span class="category-arrow" aria-hidden="true">↗</span></div>
-          </a>
+          <a class="category-card large" href="#shop" data-filter-link="food"><img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&w=1000&q=88" alt="一碗為毛孩準備的食物" loading="lazy" /><div class="category-overlay"><span>01</span><h3>好食日常</h3><p>乾糧 · 零食 · 營養補給</p></div></a>
+          <a class="category-card" href="#shop" data-filter-link="play"><img src="https://images.unsplash.com/photo-1535294435445-d7249524ef2e?auto=format&fit=crop&w=900&q=88" alt="狗狗開心玩著玩具" loading="lazy" /><div class="category-overlay"><span>02</span><h3>玩心大發</h3><p>玩具 · 散步 · 外出用品</p></div></a>
+          <a class="category-card" href="#shop" data-filter-link="home"><img src="https://images.unsplash.com/photo-1545249390-6bdfa286032f?auto=format&fit=crop&w=900&q=88" alt="舒適溫暖的寵物居家空間" loading="lazy" /><div class="category-overlay"><span>03</span><h3>舒服小窩</h3><p>睡床 · 清潔 · 居家生活</p></div></a>
         </div>
       </section>
-
-      <section class="products-section" id="products" aria-labelledby="products-title">
-        <div class="section-shell">
-          <div class="section-heading product-heading">
-            <div>
-              <p class="eyebrow">THE GOOD STUFF</p>
-              <h2 id="products-title">毛孩家庭都愛的選物</h2>
-            </div>
-            <div class="product-filters" role="group" aria-label="商品分類篩選">
-              <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">全部</button>
-              <button class="filter-button" type="button" data-filter="food" aria-pressed="false">吃得好</button>
-              <button class="filter-button" type="button" data-filter="play" aria-pressed="false">玩得好</button>
-              <button class="filter-button" type="button" data-filter="home" aria-pressed="false">住得好</button>
-            </div>
+      <section class="shop" id="shop" aria-labelledby="shop-title">
+        <div class="section-head shop-head">
+          <div><p class="kicker">02 / The good stuff</p><h2 id="shop-title">毛孩家庭都愛</h2></div>
+          <div class="product-filters" role="group" aria-label="商品分類篩選">
+            <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">全部</button>
+            <button class="filter-button" type="button" data-filter="food" aria-pressed="false">吃得好</button>
+            <button class="filter-button" type="button" data-filter="play" aria-pressed="false">玩得好</button>
+            <button class="filter-button" type="button" data-filter="home" aria-pressed="false">住得好</button>
           </div>
-          <div class="product-grid">
-            <article class="product-card" data-category="food">
-              <div class="product-image">
-                <img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&w=700&q=85" alt="天然食材製成的毛孩乾糧" loading="lazy" />
-                <span class="product-badge">人氣 No.1</span>
-                <button class="favorite-button" type="button" aria-label="收藏原野鮮食犬糧" aria-pressed="false">♡</button>
-              </div>
-              <div class="product-details"><p class="product-type">好食日常 · 犬</p><h3>原野鮮食犬糧</h3><div class="product-bottom"><span class="price">NT$ 680</span><button class="add-button" type="button" aria-label="將原野鮮食犬糧加入購物車">＋</button></div></div>
-            </article>
-            <article class="product-card" data-category="play">
-              <div class="product-image">
-                <img src="https://images.unsplash.com/photo-1535294435445-d7249524ef2e?auto=format&fit=crop&w=700&q=85" alt="天然材質的耐咬狗狗玩具" loading="lazy" />
-                <span class="product-badge badge-new">新朋友最愛</span>
-                <button class="favorite-button" type="button" aria-label="收藏森林探險玩具" aria-pressed="false">♡</button>
-              </div>
-              <div class="product-details"><p class="product-type">玩心大發 · 犬</p><h3>森林探險玩具</h3><div class="product-bottom"><span class="price">NT$ 320</span><button class="add-button" type="button" aria-label="將森林探險玩具加入購物車">＋</button></div></div>
-            </article>
-            <article class="product-card" data-category="home">
-              <div class="product-image">
-                <img src="https://images.unsplash.com/photo-1545249390-6bdfa286032f?auto=format&fit=crop&w=700&q=85" alt="柔軟舒適的寵物休息空間" loading="lazy" />
-                <button class="favorite-button" type="button" aria-label="收藏雲朵日常睡墊" aria-pressed="false">♡</button>
-              </div>
-              <div class="product-details"><p class="product-type">舒服小窩 · 貓犬適用</p><h3>雲朵日常睡墊</h3><div class="product-bottom"><span class="price">NT$ 1,280</span><button class="add-button" type="button" aria-label="將雲朵日常睡墊加入購物車">＋</button></div></div>
-            </article>
-            <article class="product-card" data-category="food">
-              <div class="product-image">
-                <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=700&q=85" alt="適合毛孩享用的小點心" loading="lazy" />
-                <span class="product-badge badge-limited">天然低敏</span>
-                <button class="favorite-button" type="button" aria-label="收藏日日鮮肉小點" aria-pressed="false">♡</button>
-              </div>
-              <div class="product-details"><p class="product-type">好食日常 · 貓犬適用</p><h3>日日鮮肉小點</h3><div class="product-bottom"><span class="price">NT$ 250</span><button class="add-button" type="button" aria-label="將日日鮮肉小點加入購物車">＋</button></div></div>
-            </article>
-          </div>
-          <div class="products-cta"><a class="button button-outline" href="#categories">探索更多好物 <span aria-hidden="true">→</span></a></div>
+        </div>
+        <div class="product-grid">
+          <article class="product-card" data-category="food"><div class="product-image"><img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&w=800&q=88" alt="天然食材製成的毛孩乾糧" loading="lazy" /><span class="product-tag">人氣 No.1</span><button class="favorite-button" type="button" aria-label="收藏原野鮮食犬糧" aria-pressed="false">♡</button></div><p class="product-type">好食日常 · 犬</p><div class="product-info"><h3>原野鮮食犬糧</h3><strong>NT$ 680</strong></div><button class="add-button" type="button" aria-label="將原野鮮食犬糧加入購物車">＋ 加入購物車</button></article>
+          <article class="product-card" data-category="play"><div class="product-image"><img src="https://images.unsplash.com/photo-1535294435445-d7249524ef2e?auto=format&fit=crop&w=800&q=88" alt="天然材質的耐咬狗狗玩具" loading="lazy" /><span class="product-tag coral">新朋友最愛</span><button class="favorite-button" type="button" aria-label="收藏森林探險玩具" aria-pressed="false">♡</button></div><p class="product-type">玩心大發 · 犬</p><div class="product-info"><h3>森林探險玩具</h3><strong>NT$ 320</strong></div><button class="add-button" type="button" aria-label="將森林探險玩具加入購物車">＋ 加入購物車</button></article>
+          <article class="product-card" data-category="home"><div class="product-image"><img src="https://images.unsplash.com/photo-1545249390-6bdfa286032f?auto=format&fit=crop&w=800&q=88" alt="柔軟舒適的寵物休息空間" loading="lazy" /><button class="favorite-button" type="button" aria-label="收藏雲朵日常睡墊" aria-pressed="false">♡</button></div><p class="product-type">舒服小窩 · 貓犬適用</p><div class="product-info"><h3>雲朵日常睡墊</h3><strong>NT$ 1,280</strong></div><button class="add-button" type="button" aria-label="將雲朵日常睡墊加入購物車">＋ 加入購物車</button></article>
+          <article class="product-card" data-category="food"><div class="product-image"><img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=800&q=88" alt="適合毛孩享用的小點心" loading="lazy" /><span class="product-tag blue">天然低敏</span><button class="favorite-button" type="button" aria-label="收藏日日鮮肉小點" aria-pressed="false">♡</button></div><p class="product-type">好食日常 · 貓犬適用</p><div class="product-info"><h3>日日鮮肉小點</h3><strong>NT$ 250</strong></div><button class="add-button" type="button" aria-label="將日日鮮肉小點加入購物車">＋ 加入購物車</button></article>
         </div>
       </section>
-
-      <section class="story-banner">
-        <div class="story-image"><img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=1000&q=85" alt="主人和狗狗一起享受散步時光" loading="lazy" /></div>
-        <div class="story-copy">
-          <p class="eyebrow">A LITTLE MORE LOVE</p>
-          <h2>每個平凡日子，<br />都值得好好<span class="highlight">陪伴。</span></h2>
-          <p>我們相信，好的生活不是多一點東西，而是多一點懂得。Animal 用心挑選每件日常，讓陪伴變得更簡單、更安心。</p>
-          <a class="text-link" href="#about">看看我們的選物理念 <span aria-hidden="true">→</span></a>
-        </div>
-        <span class="story-decoration" aria-hidden="true">✳</span>
-      </section>
-
-      <section class="newsletter section-shell" aria-labelledby="newsletter-title">
-        <div class="newsletter-copy">
-          <p class="eyebrow">A NOTE FOR YOU & YOURS</p>
-          <h2 id="newsletter-title">毛孩生活靈感，<br />偶爾寄給你。</h2>
-          <p>訂閱電子報，第一時間收到新品、好康與照顧小知識。</p>
-        </div>
-        <form class="newsletter-form">
-          <label class="sr-only" for="email">電子郵件地址</label>
-          <input id="email" name="email" type="email" placeholder="輸入你的 Email" required />
-          <button class="button button-primary" type="submit">訂閱電子報 <span aria-hidden="true">→</span></button>
-          <p class="newsletter-message" aria-live="polite"></p>
-        </form>
-        <span class="newsletter-flower" aria-hidden="true">✳</span>
-      </section>
+      <section class="story" id="story" aria-labelledby="story-title"><div class="story-image"><img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=1200&q=90" alt="主人和狗狗一起享受散步時光" loading="lazy" /></div><div class="story-copy"><p class="kicker">03 / A little more love</p><h2 id="story-title">平凡日子，<br />值得<em>好好陪伴。</em></h2><p>好的生活不是多一點東西，而是多一點懂得。我們用心挑選每件日常，讓陪伴變得更簡單、更安心。</p><a class="text-link" href="#categories">看看我們的選物理念 <span>→</span></a></div></section>
+      <section class="newsletter" aria-labelledby="newsletter-title"><div><p class="kicker">The Sunday Letter</p><h2 id="newsletter-title">毛孩生活靈感，偶爾寄給你。</h2></div><form class="newsletter-form"><label for="email">電子郵件地址</label><div><input id="email" name="email" type="email" placeholder="you@email.com" required /><button type="submit" aria-label="訂閱電子報">↗</button></div><p class="newsletter-message" aria-live="polite"></p></form></section>
     </main>
-
-    <footer class="site-footer">
-      <div class="footer-main">
-        <div class="footer-brand">
-          <a class="brand" href="#" aria-label="Animal 首頁">
-            <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 42 42" fill="none"><path d="M21 36c-1.6 0-3-.8-4.3-2.1l-9-9.2a8.6 8.6 0 0 1 12.2-12.1l1.1 1.1 1.1-1.1a8.6 8.6 0 1 1 12.2 12.1l-9 9.2C24 35.2 22.6 36 21 36Z" fill="currentColor" /><circle cx="13.8" cy="8.6" r="3.1" fill="currentColor" /><circle cx="21" cy="5.8" r="3.1" fill="currentColor" /><circle cx="28.2" cy="8.6" r="3.1" fill="currentColor" /></svg></span>
-            <span class="brand-name">animal<span>.</span></span>
-          </a>
-          <p>和毛孩一起，好好生活。<br />用心挑選，陪你照顧每個日常。</p>
-        </div>
-        <div class="footer-column"><strong>逛逛 Animal</strong><a href="#categories">所有分類</a><a href="#products">人氣選物</a><a href="#about">關於我們</a></div>
-        <div class="footer-column"><strong>需要幫忙嗎？</strong><a href="#about">常見問題</a><a href="#about">配送與退換貨</a><a href="mailto:hello@animal.tw">聯絡我們</a></div>
-        <div class="footer-social"><strong>一起分享日常</strong><div><a href="#about" aria-label="Instagram">ig</a><a href="#about" aria-label="Facebook">fb</a><a href="#about" aria-label="LINE">line</a></div><small>@animal.goodlife</small></div>
-      </div>
-      <div class="footer-bottom"><span>© <span id="copyright-year"></span> Animal. All rights reserved.</span><span>Made with <span class="footer-heart" aria-label="love">♥</span> for every good friend.</span></div>
-    </footer>
+    <footer class="site-footer"><a class="brand footer-brand" href="#" aria-label="Animal 首頁"><span>animal</span><sup>®</sup></a><div class="footer-links"><div><strong>逛逛</strong><a href="#categories">所有分類</a><a href="#shop">人氣選物</a></div><div><strong>幫助</strong><a href="#story">關於我們</a><a href="mailto:hello@animal.tw">聯絡我們</a></div></div><p>© <span id="copyright-year"></span> Animal. Good life, together.</p></footer>
     <div class="toast" role="status" aria-live="polite"></div>
     <script src="script.js"></script>
   </body>
